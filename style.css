@@ -1,0 +1,447 @@
+:root {
+    --peach: #ffdab9;
+    --dark: #2f4f4f;
+    --cyan: #e0ffff;
+    --brown: #3e2723;
+    --green: #25d366;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.navbar {
+    background-color: #e0ffff;
+    position: sticky;
+    top: 0px;
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+}
+nav .menu-navbar {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+nav .menu-navbar li a {
+    display: block;
+    padding: 0px 16px ;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: var(--dark);
+} 
+nav .menu-navbar li a:hover {
+    transition: all 0.3s;
+    background-color: #ffdab9;
+}
+.nav-brand {
+    margin: 12px 5px;
+    font-size: 18px;
+}
+.nav-flex label,#humberger {
+    display: none;
+}
+.home {
+    margin-bottom: 120px;
+    background-image: url(gambar/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cyan);
+    width: 100%;
+}
+.items-home {
+    text-align: center;
+    color: var(--cyan);
+    font-size: 20px;
+}
+.items-home h1 {
+    margin-bottom: 12px;
+}
+.items-home p {
+    margin-bottom: 28px;
+}
+.items-home a {
+    color: var(--cyan);
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 8px;
+}
+.items-home a:hover {
+    color: var(--green);
+    background-color: var(--cyan);
+}
+.about-brand {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.about-brand p {
+    font-size: 16px;
+    margin-top: 6px;
+}
+.about {
+    margin-bottom: 120px;
+    width: 100%;
+}
+.items-about {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 30px;
+    gap: 20px;
+}
+.items-about img {
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.teks-about {
+    text-align: justify;
+}
+.teks-about h3 {
+    margin-bottom: 8px;
+}
+.servis {
+    margin-bottom: 120px;
+}
+.servis-brand {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+.servis-brand p {
+    font-size: 16px;
+    margin-top: 6px;
+}
+.items-servis {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 35px;
+}
+.box-servis {
+    text-align: center;
+}
+.box-servis .fa {
+    color: var(--peach);
+    margin-bottom: 15px;
+}
+.box-servis h3 {
+    margin-bottom: 15px;
+}
+.catal-brand {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.catal-brand p {
+    font-size: 16px;
+    margin-top: 6px;
+}
+.catalog {
+    margin-bottom: 120px;
+}
+.items-catal {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.catal-box {
+    text-align: center;
+}
+.catal-box img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.catal-box h3 {
+    margin-bottom: 13px;
+}
+.price-catal {
+    margin-top: 27px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    gap: 3px;
+}
+.price-catal a {
+    background-color: #25d366;
+    color: #e0ffff;
+    padding: 6px;
+    border-radius: 8px;
+    font-weight: 400;
+}
+.price-catal a:hover {
+    background-color: var(--cyan);
+    color: var(--dark);
+    transition: all 0.3s;
+}
+.porto-brand {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.porto-brand p {
+    font-size: 16px;
+    margin-top: 6px;
+}
+.porto {
+    margin-bottom: 120px;
+}
+.items-porto {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 20px;
+}
+.box-porto img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.box-porto img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.kontak {
+    margin-bottom: 120px;
+}
+.kontak-brand {
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.kontak-brand p {
+    font-size: 16px;
+    margin-top: 6px;
+}
+.items-kontak {
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 20px;
+}
+.map {
+    text-align: center;
+}
+.map h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.map iframe {
+    border-radius: 10px;
+    width: 100%;
+}
+.akun {
+    text-align: center;
+}
+.akun h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.icon-social {
+    color: var(--cyan);
+    width: 100%;
+}
+.icon-social a {
+    color: var(--cyan);
+    font-size: 18px;
+}
+.icon-social .fa {
+    font-size: 27px;
+}
+.instagram {
+    background-color: #e4005f;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.youtube {
+    background-color: #ff0000;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.linkedin {
+    background-color: #0077b5;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.facebook {
+    background-color: #3b5998;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.instagram:hover {
+    opacity: 0.8;
+}
+.youtube:hover {
+    opacity: 0.8;
+}
+.facebook:hover {
+    opacity: 0.8;
+}
+.linkedin:hover {
+    opacity: 0.8;
+}
+.last {
+    background-color: var(--cyan);
+}
+.items-last {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.first-last h3 {
+    margin-bottom: 10px;
+}
+.first-last p {
+    font-size: 15px;
+}
+.second-last h3 {
+    margin-bottom: 10px;
+}
+.second-last p {
+    font-size: 15px;
+}
+.third-last h3 {
+    margin-bottom: 10px;
+}
+.third-last p {
+    font-size: 15px;
+}
+.fourth-last h3 {
+    margin-bottom: 10px;
+}
+.fourth-last p {
+    font-size: 15px;
+}
+.foot {
+    background-color: var(--cyan);
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+.items-foot {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.left-foot {
+    margin-bottom: 14px;
+}
+.left-foot p {
+    font-size: 13px;
+}
+.rigth-foot {
+    flex-direction: row;
+    display: flex;
+    gap: 6px;
+}
+.rigth-foot i {
+    font-size: 18px;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .nav-flex label {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 27px;
+    }
+    nav .menu-navbar {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        display: block;
+        width: 100%;
+        background-color: #e0ffff;
+    }
+    nav {
+        display: none;
+    }
+    .nav-brand h2 {
+        position: absolute;
+        right: 15px;
+    }
+    .nav-flex input:checked ~ nav{
+        display: flex;
+    }
+    .items-home {
+        font-size: 16px;
+    }
+    .items-about {
+        grid-template-columns: 1fr;
+    }
+    .teks-about {
+        text-align: center;
+    }
+    .items-servis {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .items-catal {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .price-catal {
+        font-size: 12px;
+    }
+    .items-porto {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .items-kontak {
+        grid-template-columns: 1fr;
+    }
+    .items-last {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .left-foot p {
+    font-size: 11px;
+    }
+    .rigth-foot i {
+    font-size: 15px;
+    }
+}
+@media(max-width: 450px) {
+    .items-servis {
+        grid-template-columns: 1fr;
+    }
+    .items-catal {
+        grid-template-columns: 1fr;
+    }
+    .price-catal {
+        font-size: 12px;
+    }
+    .items-porto {
+        grid-template-columns: 1fr;
+    }
+    .items-last {
+        grid-template-columns: 1fr;
+    }
+}
