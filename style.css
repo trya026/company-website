@@ -182,7 +182,7 @@ nav .menu-navbar li a:hover {
 }
 .price-catal {
     margin-top: 27px;
-    font-size: 15px;
+    font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -410,7 +410,7 @@ nav .menu-navbar li a:hover {
         grid-template-columns: repeat(2,1fr);
     }
     .price-catal {
-        font-size: 14px;
+        font-size: 17px;
     }
     .items-porto {
         grid-template-columns: repeat(2,1fr);
@@ -436,7 +436,7 @@ nav .menu-navbar li a:hover {
         grid-template-columns: 1fr;
     }
     .price-catal {
-        font-size: 14px;
+        font-size: 17px;
     }
     .items-porto {
         grid-template-columns: 1fr;
@@ -446,3 +446,4 @@ nav .menu-navbar li a:hover {
     }
 
 }
+
